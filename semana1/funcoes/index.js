@@ -100,8 +100,8 @@ const numerosParaSoma = (numero1, numero2) => {
     const soma = numero1 + numero2
     return soma
 }
-const resulUsuarioSoma = numerosParaSoma(numeroUsuario1, numeroUsuario2)
-console.log('Soma:', resultadoSoma)
+const resultadoUsuarioSoma = numerosParaSoma(numeroUsuario1, numeroUsuario2)
+console.log('Soma:', resultadoUsuarioSoma)
 
 const numerosSubtração = (numero1, numero2) => {
     const subtração = numero1 - numero2
