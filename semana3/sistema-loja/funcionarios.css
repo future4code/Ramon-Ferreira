@@ -1,0 +1,22 @@
+.fundo{
+    background-color: #000000;
+}
+
+.titulo-estilizado {
+    text-align: center;
+    color: #690170;
+    background-color: #ffffff;
+}
+
+.botoes {
+    background-color: #ffffff;
+    margin: 3px;
+    border: 3px solid #690170;
+}
+
+.texto {
+    text-align: center;
+    color: #ffffff;
+    background-color: #690170;
+    margin: auto;
+}
