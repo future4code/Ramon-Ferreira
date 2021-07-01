@@ -112,6 +112,13 @@ table {
     width: 60%;
 }
 
+.imput-estilo {
+    border: 5px solid black;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+}
+
 td button {
     background-color: #fadf63;
     width: 150px;
@@ -122,7 +129,7 @@ td button {
 
 .container-do-search {
     margin-top: 20px;
-    height: 100px;
+    height: 50px;
 }
 
 
