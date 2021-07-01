@@ -116,6 +116,13 @@ div:last-child {
 table {
     text-align: center;
     width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+li {
+    width: fit-content;
+    margin: 0 auto;
 }
 
 .imput-estilo {
