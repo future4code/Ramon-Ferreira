@@ -2,6 +2,7 @@
 body {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 34%, rgba(255,255,255,1) 100%);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 header {
@@ -21,8 +22,25 @@ table {
 
 div img {
     width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
 }
 
-.textoCor {
+#textoCor {
     color: white;
+}
+
+.textoCenter {
+    text-align: center;
+}
+
+.menuTam {
+    width: 100%;
+}
+
+#redes {
+    background-color: white;
+    margin: 10px;
 }
