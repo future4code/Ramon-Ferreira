@@ -5,9 +5,10 @@ header {
     background-color: mediumvioletred;
 }
 main{
-    display: grid;
+    display: flex;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1/-1;
 }
 
 button {

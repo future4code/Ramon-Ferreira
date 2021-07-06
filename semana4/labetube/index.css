@@ -1,0 +1,67 @@
+* {
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / -1;
+    background-color:green;
+    align-items: center;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+
+footer {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    box-shadow: 3px 3px 6px green;
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px;
+    width: 90vw;
+}
+
+.pesquisa {
+    height: 30px;
+    width: 150px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.text {
+    margin-left: 10px;
+    color: white;
+}
+
+/* Video */
+
+.video {
+    height: 90vh;
+    width: 90vw;
+    padding-left: 50px;
+}
+
+.imagens {
+    height: 200px;
+    width: 200px;
+}
