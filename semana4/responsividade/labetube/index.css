@@ -29,21 +29,21 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin: 10px;
+    margin: 20px;
     box-shadow: 3px 3px 6px green;
+    width: 50vw;
     
 }
 
 main {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: 40px;
-    width: 90vw;
+    width: 100%;
 }
 
 .pesquisa {
-    height: 30px;
-    width: 150px;
+    height: 30vw;
+    width: 150vw;
     margin-right: 10px;
     border-radius: 5px;
 }
@@ -56,12 +56,35 @@ main {
 /* Video */
 
 .video {
-    height: 90vh;
+    height: 90vw;
     width: 90vw;
-    padding-left: 50px;
 }
 
 .imagens {
-    height: 200px;
-    width: 200px;
+    height: 50vw;
+    width: 50vw;
 }
+
+
+
+@media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    
+    /* celulares */
+    }
+@media screen and (min-device-width : 481px) and (max-device-width : 1119px) {
+    /* tablets */
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-device-width : 1200px) {
+    /* computadores */
+    main {
+        grid-template-columns:repeat(4, 1fr);
+    }
+    }
+
