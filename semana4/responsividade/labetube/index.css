@@ -1,0 +1,90 @@
+* {
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / -1;
+    background-color:green;
+    align-items: center;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+
+footer {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 3px 3px 6px green;
+    width: 50vw;
+    
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+}
+
+.pesquisa {
+    height: 30vw;
+    width: 150vw;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.text {
+    margin-left: 10px;
+    color: white;
+}
+
+/* Video */
+
+.video {
+    height: 90vw;
+    width: 90vw;
+}
+
+.imagens {
+    height: 50vw;
+    width: 50vw;
+}
+
+
+
+@media screen and (min-device-width : 100px) and (max-device-width : 480px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    
+    /* celulares */
+    }
+@media screen and (min-device-width : 481px) and (max-device-width : 1119px) {
+    /* tablets */
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (min-device-width : 1200px) {
+    /* computadores */
+    main {
+        grid-template-columns:repeat(4, 1fr);
+    }
+    }
+
