@@ -13,15 +13,8 @@ const headers = {
 
 export default class Cadastro extends React.Component {
   state = {
-    id: [],
-    Lnomes: [],
-    Lemail: [],
     InputNome: "",
     InputEmail: "",
-  };
-
-  componentDidMount = () => {
-    this.pegarUsuarios();
   };
 
   mudaInputNome = (e) => {
@@ -32,17 +25,7 @@ export default class Cadastro extends React.Component {
     this.setState({ InputEmail: e.target.value });
   };
 
-  pegarUsuarios = () => {
-    axios
-      .get(url, headers)
-      .then((res) => {
-        this.setState({ Lnomes: res.data });
-        console.log(res);
-      })
-      .catch((error) => {
-        alert(error.response.data);
-      });
-  };
+
 
   novoUsuario = () => {
     const body = {
@@ -55,29 +38,20 @@ export default class Cadastro extends React.Component {
         alert("Usuario cadastrado com sucesso!");
         this.setState({ InputNome: "" });
         this.setState({ InputEmail: "" });
-        this.pegarUsuarios();
       })
       .catch((error) => {
         alert(error.response.data.message);
       });
-  }
+  };
 
-    render() {
-
+  render() {
       return (
         <div>
-          <button onClick={this.props.telaCadastro}>Lista de Usuarios</button>
-          <input
-            value={this.state.InputNome}
-            onChange={this.mudaInputNome}
-          />
-                    <input
-            value={this.state.InputEmail}
-            onChange={this.mudaInputEmail}
-          />
+          <button onClick={this.props.cadastro}>Lista de Usuarios</button>
+          <input value={this.state.InputNome} onChange={this.mudaInputNome} />
+          <input value={this.state.InputEmail} onChange={this.mudaInputEmail} />
           <button onClick={this.novoUsuario}>Enviar</button>
-
         </div>
-      )
-    }
+      );
+  }
 }
