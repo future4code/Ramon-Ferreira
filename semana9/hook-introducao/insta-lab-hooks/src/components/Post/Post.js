@@ -43,7 +43,7 @@ const Post = (props) => {
 
       <PostFooter>
         <IconeComContador
-          icone={iconeCurtida}
+          iconeCurtida={iconeCurtida}
           onClickIcone={onClickCurtida}
           // valorContador={numeroCurtidas}
         />
