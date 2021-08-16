@@ -1,13 +1,15 @@
-import React from "react"
+import React, { useState } from "react"
 
 export const List = () => {
+    const [matchesList, setMatchesList] = useState([])
+
+    const getMatchesList = () => {
+
+    }
     return(
     <div>List
-        <ul>
-            <li>Pessoa 1</li>
-            <li>Pessoa 2</li>
-            <li>Pessoa 3</li>
-        </ul>
+        <img src=""/>
+        <h2>Nome</h2>
     </div>
 
     )

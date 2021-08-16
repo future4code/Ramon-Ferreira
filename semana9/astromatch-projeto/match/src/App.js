@@ -1,4 +1,5 @@
 import React from "react"
+import {useEffect, useState} from "react"
 import { List } from "./components/List"
 import { Match } from "./components/Match"
 
@@ -7,6 +8,7 @@ const [currentPage, setCurrentPage] = useState("home")
 
 const changePage = () => {
   if (currentPage === "home"){
+    setCurrentPage("matches")
   } else {
     setCurrentPage("home")
   }

@@ -28,22 +28,31 @@ export const Match = () => {
     const getProfile = () => {
         axios.get(url)
         .then((res) => {
-            console.log(res.data)
+            setProfile(res.data.profile)
         })
         .catch((err) => {
             console.log(err.response)
         })
     }
 
+    const choosePerson = () => {
+        console.log("Botão de escolha")
+    }
+
     return(
+    <div>
+        {!profile ? <div>Acabaram os perfis! Aperte o botão limpar.</div> :
     <All>
-        <img src="https://i.picsum.photos/id/980/200/200.jpg?hmac=6XJlc3jZzO4_ikuKGQFXIuERlW0eZx82q3xiC-b3Tso"></img>
+        <img src={profile.photo}></img>
         <div>
-            <p>Nome</p>
-            <p>Descrição</p>
-            <button>❌</button>
-            <button>❤</button>
+            <p>{profile.name}, {profile.age}</p>
+            <p>{profile.bio}</p>
+            <button onClick={choosePerson}>❌</button>
+            <button onClick={choosePerson}>❤</button>
         </div>
+
     </All>
+        }
+    </div>
     )
 }
