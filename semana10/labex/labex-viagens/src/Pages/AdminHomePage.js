@@ -1,5 +1,5 @@
 import React from "react"
 
-export const AdminHome = () => {
+export const AdminPage = () => {
 
 }
