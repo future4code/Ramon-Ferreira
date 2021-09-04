@@ -1,6 +1,7 @@
 import React from "react"
 import { BrowserRouter, Switch, Route } from "react-router-dom"
-import { Cadastro } from "../pags/CadastroPag/Cadastro"
+import Header from "../components/Header/Header"
+import { Home } from "../pags/HomePag/Home"
 import { Feed } from "../pags/FeedPag/Feed"
 import { Login } from "../pags/LoginPag/Login"
 import { Post } from "../pags/PostPag/Post"
@@ -9,12 +10,13 @@ import { Post } from "../pags/PostPag/Post"
 export const Router = () => {
     return (
         <BrowserRouter>
+        <Header/>
         <Switch>
             <Route exact path="/">
-                <Login/>
+                <Home/>
             </Route>
-            <Route exact path="/cadastro">
-                <Cadastro/>
+            <Route exact path="/login">
+                <Login/>
             </Route>
             <Route exact path="/feed">
                 <Feed/>

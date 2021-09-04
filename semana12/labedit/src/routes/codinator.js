@@ -1,17 +1,17 @@
 
-export const goToLogin = (history) => {
-    history.pushState("/")
+export const goToHome = (history) => {
+    history.push("/")
 }
 
-export const goToCadastro = (history) => {
-    history.pushState("/cadastro")
+export const goToLogin = (history) => {
+    history.push("/login")
 }
 
 export const goToFeed = (history) => {
-    history.pushState("/feed")
+    history.push("/feed")
 }
 
 export const goToPost
  = (history , id) => {
-    history.pushState(`/post/${id}`)
+    history.push(`/post/${id}`)
 }
