@@ -2,6 +2,7 @@ import { useState } from "react";
 import "./styles.css";
 import { data } from "./data/data";
 import CardName from "./components/CardName/index.jsx"
+import CardPeople from "./components/CardPeople";
 
 export default function App() {
   const [people, setPeople] = useState([]);
@@ -22,8 +23,9 @@ export default function App() {
       <button onClick={renderiza}>Renderiza lista</button>
       <div className="List">
         <ul>
-          {lista}
+        <CardPeople/>
         </ul>
+        
       </div>
     </div>
   );
