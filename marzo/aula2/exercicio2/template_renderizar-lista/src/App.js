@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./styles.css";
 import { data } from "./data/data";
-import CardName from "./components/CardName/index.jsx"
 import CardPeople from "./components/CardPeople";
 
 export default function App() {
@@ -13,7 +12,7 @@ export default function App() {
 
   const lista = people.map((item) => {
     return(
-      <CardName name= {item.name} />
+      <CardPeople />
     )
   });
 
@@ -23,9 +22,8 @@ export default function App() {
       <button onClick={renderiza}>Renderiza lista</button>
       <div className="List">
         <ul>
-        <CardPeople/>
+          {lista}
         </ul>
-        
       </div>
     </div>
   );
