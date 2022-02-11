@@ -8,7 +8,7 @@ function CharacterListPage() {
     const [list, setList] = useState([])
     console.log(list)
     const getList = () => {
-        axios.get(BASE_URL)
+        axios.get(`${BASE_URL}people`)
         .then((res) => {setList(res.data.results);})
         .catch((error) => {console.log(error)})
     }
