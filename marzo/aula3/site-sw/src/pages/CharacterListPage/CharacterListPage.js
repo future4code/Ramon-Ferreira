@@ -18,9 +18,9 @@ function CharacterListPage() {
 
     const getOnClick = (page) => () => navigation(page)
 
-    const renderList = list.map((character) => {
+    const renderList = list.map((character, index) => {
         return (
-        <button onClick={getOnClick("/detail-page")}>{character.name}</button>
+        <button key={character.name} onClick={getOnClick(`/detail/${index + 1}`)}>{character.name}</button>
         )
     })
 
